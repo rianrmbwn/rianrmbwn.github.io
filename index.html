@@ -4,12 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Rian Rimbawan — Programmer, AI Specialist & Konten Kreator</title>
-<meta name="description" content="Rian Rimbawan (algorimba): programmer, AI specialist, pembuat konten & editor video/gambar, serta trader sejak 2017. Terbuka untuk peluang kerja di bidang pemrograman, AI, sosial media, dan konten.">
+<meta name="description" content="Rian Rimbawan (algorimba): programmer, AI specialist, pembuat konten & editor video/gambar, serta trader sejak 2017. Terbuka untuk kolaborasi dan proyek di bidang pemrograman, AI, sosial media, dan konten.">
 <meta name="theme-color" content="#0a0a0a">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23a3162d'/%3E%3Cstop offset='1' stop-color='%235c0f1b'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='12' fill='%230a0a0a'/%3E%3Crect x='3' y='3' width='58' height='58' rx='10' fill='none' stroke='%237d1526' stroke-width='2'/%3E%3Cpath d='M18 50V14h17c8 0 13 4 13 11 0 5-3 9-8 10l10 15h-9L30 36h-5v14zm7-20h9c4 0 6-2 6-5s-2-5-6-5h-9z' fill='url(%23g)'/%3E%3C/svg%3E">
 <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230a0a0a'/%3E%3Cpath d='M18 50V14h17c8 0 13 4 13 11 0 5-3 9-8 10l10 15h-9L30 36h-5v14zm7-20h9c4 0 6-2 6-5s-2-5-6-5h-9z' fill='%23a3162d'/%3E%3C/svg%3E">
 <meta property="og:title" content="Rian Rimbawan — Programmer, Konten Kreator & Trader">
-<meta property="og:description" content="Coding keras, konten tajam. Terbuka untuk peluang kerja.">
+<meta property="og:description" content="Coding keras, konten tajam. Terbuka untuk kolaborasi.">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -140,12 +140,31 @@ section{padding:90px 0;border-bottom:1px solid var(--line)}
 .card p{font-size:.96rem;color:var(--steel);margin-bottom:22px}
 .card .go{font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;color:#fff;border-bottom:1px solid var(--blood);padding-bottom:3px}
 
+/* AKTIF */
+.card .links{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
+.card .links a{border:1px solid var(--maroon-2);padding:7px 14px;font-size:.78rem;letter-spacing:.08em;color:#fff;background:rgba(125,21,38,.18);transition:background .2s,box-shadow .2s}
+.card .links a:hover{background:var(--maroon-2);box-shadow:0 0 16px rgba(163,22,45,.45)}
+.card .note{font-size:.86rem;color:var(--steel);border-top:1px dashed var(--line);padding-top:14px;margin-top:4px;margin-bottom:0}
+.card .note b{color:var(--ash)}
+.soon{display:inline-block;font-family:'Special Elite';font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:#fff;background:var(--maroon-2);padding:2px 9px;margin-left:6px;vertical-align:middle}
+.fine{font-size:.76rem;color:var(--steel);margin-top:14px;margin-bottom:0}
+
 /* OPEN TO WORK */
 .open{background:linear-gradient(135deg,var(--maroon) 0%,#2a0810 70%);border:1px solid var(--maroon-2);padding:48px 40px;position:relative;overflow:hidden}
 .open h3{font-size:clamp(2rem,5vw,3rem);margin-bottom:14px}
 .open p{max-width:640px;color:var(--ash)}
 .chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
 .chips span{border:1px solid rgba(255,255,255,.22);padding:7px 16px;font-size:.78rem;text-transform:uppercase;letter-spacing:.14em;color:#fff;background:rgba(0,0,0,.25)}
+
+/* SOCIALS */
+.socials{display:flex;flex-wrap:wrap;justify-content:center;gap:40px;margin-top:38px}
+.sgroup{text-align:center}
+.sgroup h4{font-family:'Special Elite',monospace;font-weight:400;font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;color:var(--steel);margin-bottom:4px}
+.sgroup .handle{font-size:.78rem;color:var(--steel);margin-bottom:12px;min-height:1.2em}
+.sicons{display:flex;gap:10px;justify-content:center}
+.sicons a{width:48px;height:48px;display:grid;place-items:center;border:1px solid var(--maroon-2);color:var(--ash);background:rgba(125,21,38,.15);transition:background .2s,box-shadow .2s,transform .2s,color .2s}
+.sicons a:hover{background:var(--maroon-2);color:#fff;box-shadow:0 0 18px rgba(163,22,45,.5);transform:translateY(-3px)}
+.sicons svg{width:22px;height:22px}
 
 /* CONTACT */
 .contact{text-align:center}
@@ -165,7 +184,8 @@ footer span{color:var(--blood)}
 .rv.on{opacity:1;transform:none}
 
 @media (max-width:760px){
-  nav ul{gap:14px;font-size:.7rem}
+  nav ul{gap:10px;font-size:.62rem;letter-spacing:.1em}
+  .logo{font-size:1.3rem}
   .about{grid-template-columns:1fr}
   .hero{padding:70px 0 60px}
   .tracks li{grid-template-columns:40px 1fr}
@@ -180,6 +200,13 @@ footer span{color:var(--blood)}
 </head>
 <body>
 
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-ig" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="i-tt" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3v11.5a3.5 3.5 0 1 1-3.5-3.5"/><path d="M14 3c.4 2.6 2.1 4.2 5 4.5"/></symbol>
+  <symbol id="i-fb" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></symbol>
+  <symbol id="i-yt" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></symbol>
+</svg>
+
 <nav>
   <div class="wrap">
     <a href="#top" class="logo">RIAN<span>.</span>RMBWN</a>
@@ -187,6 +214,7 @@ footer span{color:var(--blood)}
       <li><a href="#about">Tentang</a></li>
       <li><a href="#skills">Skill</a></li>
       <li><a href="#projects">Proyek</a></li>
+      <li><a href="#aktif">Konten</a></li>
       <li><a href="#contact">Kontak</a></li>
     </ul>
   </div>
@@ -215,7 +243,7 @@ footer span{color:var(--blood)}
         <p>Saya <strong>Rian Rimbawan</strong>, dikenal online sebagai <strong>algorimba</strong>. Latar belakang saya di <strong>pemrograman</strong> dan turunannya: membuat situs web, otomasi, dan sistem yang benar-benar dipakai.</p>
         <p>Di sisi lain, saya menekuni <strong>AI</strong> sebagai alat kerja: memanfaatkan model AI untuk otomasi, produksi konten (teks, gambar, video), dan mempercepat alur kerja yang biasanya memakan waktu berjam-jam.</p>
         <p>Selama bertahun-tahun saya menjalankan usaha sendiri, mulai dari mengelola situs sinyal trading berbasis konsep <strong>ICT</strong> hingga membuat konten visual. Kebiasaan itu melatih saya mandiri, cepat belajar, dan bertanggung jawab atas hasil akhir.</p>
-        <p>Sekarang saya terbuka untuk bergabung dengan tim yang butuh orang yang bisa mengerjakan sisi teknis sekaligus sisi kreatif.</p>
+        <p>Saya selalu terbuka untuk berkolaborasi dengan tim atau pribadi yang butuh orang yang bisa mengerjakan sisi teknis sekaligus sisi kreatif.</p>
       </div>
       <div class="stats">
         <div class="stat"><b>2017</b><span>Mulai trading</span></div>
@@ -259,11 +287,52 @@ footer span{color:var(--blood)}
   </div>
 </section>
 
+<section id="aktif">
+  <div class="wrap">
+    <div class="sec-head rv"><span class="no">04</span><h2>Sedang Aktif</h2></div>
+    <div class="grid">
+
+      <div class="card rv">
+        <div class="kind">Konten Edukasi · CPNS</div>
+        <h3>NAMSA Class</h3>
+        <p>Saya aktif kembali membuat konten edukasi CPNS: contoh soal dan informasi seputar CPNS. Produksinya memakai alur otomasi AI, termasuk suara hasil clone suara saya sendiri.</p>
+        <div class="links">
+          <a href="https://www.instagram.com/namsaclass" target="_blank" rel="noopener">Instagram @namsaclass</a>
+          <a href="https://www.tiktok.com/@namsaclass" target="_blank" rel="noopener">TikTok @namsaclass</a>
+          <a href="https://www.youtube.com/@namsaclassYT" target="_blank" rel="noopener">YouTube @namsaclassYT</a>
+          <a href="https://namsa.id" target="_blank" rel="noopener">Website namsa.id</a>
+        </div>
+      </div>
+
+      <div class="card rv">
+        <div class="kind">Komunitas · Telegram</div>
+        <h3>Sinyal &amp; Komunitas Trader</h3>
+        <p>Channel sinyal trading dan grup komunitas di Telegram: <b style="color:#fff">Solo Raya Traders</b> untuk trader Soloraya, dan <b style="color:#fff">Bimbel Trading</b> untuk komunitas dengan skala yang lebih umum. Tempat berbagi dan belajar trading bareng.</p>
+        <div class="links">
+          <a href="https://t.me/+AVClMuk6HNU1YTY1" target="_blank" rel="noopener">Sinyal VIP (tanpa delay)</a>
+          <a href="https://t.me/freebizid" target="_blank" rel="noopener">Sinyal Public</a>
+          <a href="https://t.me/SoloRayaTraders" target="_blank" rel="noopener">Solo Raya Traders</a>
+          <a href="https://t.me/BimbelTrading" target="_blank" rel="noopener">Bimbel Trading</a>
+        </div>
+      </div>
+
+      <div class="card rv">
+        <div class="kind">Ebook · Trading</div>
+        <h3>Ebook Edukasi Trading</h3>
+        <p>Ebook edukasi trading, khususnya untuk market CFD, tersedia di algorimba.github.io.</p>
+        <a class="go" href="https://algorimba.github.io" target="_blank" rel="noopener">Buka ebook &rarr;</a>
+        <p class="fine">Konten bersifat edukasi. Trading CFD berisiko tinggi.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 <section>
   <div class="wrap">
     <div class="open rv">
-      <h3>Terbuka untuk Peluang Kerja</h3>
-      <p>Mencari posisi di bidang pemrograman, AI, sosial media, atau produksi konten visual. Siap belajar cepat, bekerja mandiri, dan berkontribusi dalam tim.</p>
+      <h3>Terbuka untuk Kolaborasi</h3>
+      <p>Tertarik mengerjakan proyek bareng di bidang pemrograman, AI, sosial media, atau produksi konten visual? Saya siap belajar cepat, bekerja mandiri, dan berkontribusi dalam tim.</p>
       <div class="chips"><span>Programming</span><span>AI Specialist</span><span>Sosial Media</span><span>Editor Video</span><span>Editor Gambar</span></div>
     </div>
   </div>
@@ -272,12 +341,33 @@ footer span{color:var(--blood)}
 <section class="contact" id="contact">
   <div class="wrap">
     <h2 class="rv">Ayo <span class="red">Kerja Bareng</span></h2>
-    <p class="rv">Punya lowongan atau proyek? Hubungi saya langsung.</p>
+    <p class="rv">Punya proyek, ide, atau tawaran kolaborasi? Hubungi saya langsung.</p>
     <div class="btns rv">
       <a class="btn primary" href="https://wa.me/6285117006157" target="_blank" rel="noopener">WhatsApp</a>
       <a class="btn ghost" href="mailto:rianrimbawan@gmail.com">Email</a>
     </div>
     <div class="mail rv">rianrimbawan@gmail.com</div>
+    <div class="socials rv">
+      <div class="sgroup">
+        <h4>Personal</h4>
+        <div class="handle">@rianrmbwn</div>
+        <div class="sicons">
+          <a href="https://www.instagram.com/rianrmbwn" target="_blank" rel="noopener" aria-label="Instagram @rianrmbwn" title="Instagram @rianrmbwn"><svg><use href="#i-ig"/></svg></a>
+          <a href="https://www.tiktok.com/@rianrmbwn" target="_blank" rel="noopener" aria-label="TikTok @rianrmbwn" title="TikTok @rianrmbwn"><svg><use href="#i-tt"/></svg></a>
+          <a href="https://www.facebook.com/rianrmbwn" target="_blank" rel="noopener" aria-label="Facebook @rianrmbwn" title="Facebook @rianrmbwn"><svg><use href="#i-fb"/></svg></a>
+        </div>
+      </div>
+      <div class="sgroup">
+        <h4>Algorimba</h4>
+        <div class="handle">@algorimba &middot; IG @rimbalgo</div>
+        <div class="sicons">
+          <a href="https://www.instagram.com/rimbalgo" target="_blank" rel="noopener" aria-label="Instagram @rimbalgo" title="Instagram @rimbalgo"><svg><use href="#i-ig"/></svg></a>
+          <a href="https://www.tiktok.com/@algorimba" target="_blank" rel="noopener" aria-label="TikTok @algorimba" title="TikTok @algorimba"><svg><use href="#i-tt"/></svg></a>
+          <a href="https://www.facebook.com/algorimba" target="_blank" rel="noopener" aria-label="Facebook @algorimba" title="Facebook @algorimba"><svg><use href="#i-fb"/></svg></a>
+          <a href="https://www.youtube.com/@algorimba" target="_blank" rel="noopener" aria-label="YouTube @algorimba" title="YouTube @algorimba"><svg><use href="#i-yt"/></svg></a>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
