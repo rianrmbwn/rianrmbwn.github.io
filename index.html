@@ -128,7 +128,7 @@ section{padding:90px 0;border-bottom:1px solid var(--line)}
 .tracks .len{font-family:'Special Elite';color:var(--steel);font-size:.85rem}
 
 /* PROJECTS */
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(340px,100%),1fr));gap:24px}
 .card{
   background:var(--panel);border:1px solid var(--line);padding:34px 30px;position:relative;
   transition:transform .3s,border-color .3s,box-shadow .3s;overflow:hidden
@@ -148,6 +148,7 @@ section{padding:90px 0;border-bottom:1px solid var(--line)}
 .card .note b{color:var(--ash)}
 .soon{display:inline-block;font-family:'Special Elite';font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:#fff;background:var(--maroon-2);padding:2px 9px;margin-left:6px;vertical-align:middle}
 .fine{font-size:.76rem;color:var(--steel);margin-top:14px;margin-bottom:0}
+.card .lbl{font-family:'Special Elite',monospace;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--steel);margin:0 0 8px}
 
 /* OPEN TO WORK */
 .open{background:linear-gradient(135deg,var(--maroon) 0%,#2a0810 70%);border:1px solid var(--maroon-2);padding:48px 40px;position:relative;overflow:hidden}
@@ -214,7 +215,6 @@ footer span{color:var(--blood)}
       <li><a href="#about">Tentang</a></li>
       <li><a href="#skills">Skill</a></li>
       <li><a href="#projects">Proyek</a></li>
-      <li><a href="#aktif">Konten</a></li>
       <li><a href="#contact">Kontak</a></li>
     </ul>
   </div>
@@ -271,56 +271,39 @@ footer span{color:var(--blood)}
   <div class="wrap">
     <div class="sec-head rv"><span class="no">03</span><h2>Proyek</h2></div>
     <div class="grid">
-      <a class="card rv" href="https://free.biz.id" target="_blank" rel="noopener">
-        <div class="kind">Web · Trading</div>
-        <h3>free.biz.id</h3>
-        <p>Situs sinyal trading berbasis ICT yang saya bangun dan kelola sendiri.</p>
-        <span class="go">Kunjungi &rarr;</span>
-      </a>
-      <a class="card rv" href="https://algorimba.github.io" target="_blank" rel="noopener">
-        <div class="kind">Branding · Trading</div>
-        <h3>algorimba</h3>
-        <p>Halaman branding trading saya di bawah nama online algorimba.</p>
-        <span class="go">Kunjungi &rarr;</span>
-      </a>
-    </div>
-  </div>
-</section>
-
-<section id="aktif">
-  <div class="wrap">
-    <div class="sec-head rv"><span class="no">04</span><h2>Sedang Aktif</h2></div>
-    <div class="grid">
 
       <div class="card rv">
         <div class="kind">Konten Edukasi · CPNS</div>
-        <h3>NAMSA Class</h3>
-        <p>Saya aktif kembali membuat konten edukasi CPNS: contoh soal dan informasi seputar CPNS. Produksinya memakai alur otomasi AI, termasuk suara hasil clone suara saya sendiri.</p>
+        <h3>NAMSA</h3>
+        <p>NAMSA Class adalah kanal konten edukasi CPNS yang saya aktifkan kembali: contoh soal dan informasi seputar CPNS. Produksinya memakai alur otomasi AI, termasuk suara hasil clone suara saya sendiri.</p>
+        <div class="lbl">NAMSA Class</div>
         <div class="links">
           <a href="https://www.instagram.com/namsaclass" target="_blank" rel="noopener">Instagram @namsaclass</a>
           <a href="https://www.tiktok.com/@namsaclass" target="_blank" rel="noopener">TikTok @namsaclass</a>
           <a href="https://www.youtube.com/@namsaclassYT" target="_blank" rel="noopener">YouTube @namsaclassYT</a>
-          <a href="https://namsa.id" target="_blank" rel="noopener">Website namsa.id</a>
+        </div>
+        <div class="lbl">Website</div>
+        <div class="links">
+          <a href="https://namsa.id" target="_blank" rel="noopener">namsa.id</a>
         </div>
       </div>
 
       <div class="card rv">
-        <div class="kind">Komunitas · Telegram</div>
-        <h3>Sinyal &amp; Komunitas Trader</h3>
-        <p>Channel sinyal trading dan grup komunitas di Telegram: <b style="color:#fff">Solo Raya Traders</b> untuk trader Soloraya, dan <b style="color:#fff">Bimbel Trading</b> untuk komunitas dengan skala yang lebih umum. Tempat berbagi dan belajar trading bareng.</p>
+        <div class="kind">Trading · Edukasi · Komunitas</div>
+        <h3>ALGORIMBA</h3>
+        <p>Proyek trading saya di bawah nama algorimba: situs sinyal berbasis ICT, ebook edukasi trading (khususnya market CFD), serta komunitas trader di Telegram, yaitu Solo Raya Traders untuk trader Soloraya dan Bimbel Trading untuk skala yang lebih umum.</p>
+        <div class="lbl">Website &amp; Ebook</div>
+        <div class="links">
+          <a href="https://free.biz.id" target="_blank" rel="noopener">free.biz.id</a>
+          <a href="https://algorimba.github.io" target="_blank" rel="noopener">Ebook &middot; algorimba.github.io</a>
+        </div>
+        <div class="lbl">Telegram</div>
         <div class="links">
           <a href="https://t.me/+AVClMuk6HNU1YTY1" target="_blank" rel="noopener">Sinyal VIP (tanpa delay)</a>
           <a href="https://t.me/freebizid" target="_blank" rel="noopener">Sinyal Public</a>
           <a href="https://t.me/SoloRayaTraders" target="_blank" rel="noopener">Solo Raya Traders</a>
           <a href="https://t.me/BimbelTrading" target="_blank" rel="noopener">Bimbel Trading</a>
         </div>
-      </div>
-
-      <div class="card rv">
-        <div class="kind">Ebook · Trading</div>
-        <h3>Ebook Edukasi Trading</h3>
-        <p>Ebook edukasi trading, khususnya untuk market CFD, tersedia di algorimba.github.io.</p>
-        <a class="go" href="https://algorimba.github.io" target="_blank" rel="noopener">Buka ebook &rarr;</a>
         <p class="fine">Konten bersifat edukasi. Trading CFD berisiko tinggi.</p>
       </div>
 
