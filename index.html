@@ -66,7 +66,7 @@ nav ul a:hover{color:#fff}
   font-family:'Special Elite',monospace;color:var(--blood);letter-spacing:.2em;
   font-size:.85rem;text-transform:uppercase;margin-bottom:18px
 }
-.hero h1{font-size:clamp(4rem,13vw,9.5rem);text-transform:uppercase;position:relative;display:inline-block}
+.hero h1{font-size:clamp(3.2rem,7.4vw,6.6rem);text-transform:uppercase;position:relative;display:inline-block}
 .hero h1 .red{color:var(--blood);text-shadow:0 0 28px rgba(163,22,45,.55)}
 .hero h1::after{
   content:attr(data-text);position:absolute;left:0;top:0;color:var(--maroon-2);
@@ -89,6 +89,14 @@ nav ul a:hover{color:#fff}
 .btn.primary:hover{background:var(--blood);box-shadow:0 0 24px rgba(163,22,45,.55);transform:translateY(-2px)}
 .btn.ghost{color:var(--ash)}
 .btn.ghost:hover{background:rgba(163,22,45,.12);color:#fff;transform:translateY(-2px)}
+
+/* hero 2 kolom + avatar */
+.hero-grid{display:grid;grid-template-columns:1.45fr 1fr;gap:32px;align-items:center}
+.hero-art{position:relative;display:flex;justify-content:center;align-items:flex-end}
+.hero-art::before{content:"";position:absolute;left:50%;bottom:6%;width:min(430px,92%);aspect-ratio:1;transform:translateX(-50%);border-radius:50%;background:radial-gradient(circle,rgba(163,22,45,.55),rgba(92,15,27,.25) 55%,transparent 72%);filter:blur(6px)}
+.hero-art::after{content:"";position:absolute;left:50%;bottom:10%;width:min(340px,74%);aspect-ratio:1;transform:translateX(-50%);border-radius:50%;border:1px solid rgba(163,22,45,.5)}
+.hero-art img{position:relative;z-index:1;display:block;height:min(560px,64vh);width:auto;filter:drop-shadow(0 18px 30px rgba(0,0,0,.6));animation:float 5s ease-in-out infinite}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
 
 /* equalizer */
 .eq{display:flex;align-items:flex-end;gap:5px;height:70px;margin-top:56px}
@@ -200,6 +208,8 @@ footer span{color:var(--blood)}
   .logo{font-size:1.3rem}
   .about{grid-template-columns:1fr}
   .hero{padding:70px 0 60px}
+  .hero-grid{grid-template-columns:1fr;gap:36px}
+  .hero-art img{height:380px}
   .tracks li{grid-template-columns:40px 1fr}
   .tracks .len{display:none}
   .open{padding:34px 24px}
@@ -232,7 +242,8 @@ footer span{color:var(--blood)}
 </nav>
 
 <header class="hero" id="top">
-  <div class="wrap">
+  <div class="wrap hero-grid">
+   <div class="hero-text">
     <div class="tag">// programmer · ai specialist · konten kreator · trader</div>
     <h1 data-text="RIAN RIMBAWAN">RIAN <span class="red">RIMBAWAN</span></h1>
     <p class="lead">Coding keras, konten tajam. Saya membangun sistem terkomputerisasi, mengolah video &amp; gambar, dan mengelola sosial media dengan disiplin yang sama seperti saat membaca chart pasar.</p>
@@ -243,6 +254,10 @@ footer span{color:var(--blood)}
     <div class="eq" aria-hidden="true">
       <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
     </div>
+   </div>
+   <div class="hero-art">
+    <img src="avatar.webp" alt="Ilustrasi karikatur Rian Rimbawan memakai topi dan hoodie hitam" width="451" height="1100" fetchpriority="high">
+   </div>
   </div>
 </header>
 
